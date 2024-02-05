@@ -1,0 +1,237 @@
+.nav-icons {
+
+    font-size: 1.6rem;
+    color: #9ca3af;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.menu-buttonn {
+    font-size: 1.98rem;
+    font-weight: bolder;
+    color: #9ca3af;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.nav-icons:hover,
+.menu-buttonn:hover {
+    color: gray;
+}
+
+.button {
+    --color: #560bad;
+    font-family: inherit;
+    display: inline-block;
+    width: 9rem;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 0.9rem;
+    border-radius: 6rem;
+    font-weight: 500;
+    color: var(--color);
+}
+
+.button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.button:hover {
+    color: #fff;
+}
+
+.button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+.button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+}
+
+@media (min-width : 555px) and (max-width : 785px) {
+    .user-cardd {
+        top: -5rem !important;
+        left: 0rem !important;
+        width: 33rem !important;
+        height: 13rem !important;
+        margin: auto;
+    }
+
+    .statistics {
+        flex-direction: column !important;
+        width: 90% !important;
+        height: max-content !important;
+    }
+
+    .statistics-text {
+        width: 90% !important;
+    }
+
+    .statistics-data {
+        margin-top: 1rem;
+        width: 100% !important;
+    }
+
+    .user-bio {
+        font-size: 0.84rem !important;
+    }
+
+    .user-type {
+        height: 2rem !important;
+    }
+
+    .releases {
+        margin-top: -3rem !important;
+    }
+}
+
+@media screen and (max-width : 555px) {
+    .statistics {
+        flex-direction: column !important;
+        width: 90% !important;
+        height: max-content !important;
+    }
+
+    .statistics-text {
+        width: 90% !important;
+    }
+
+    .statistics-data {
+        margin-top: 1rem;
+        width: 100% !important;
+    }
+
+    .user-cardd {
+        flex-direction: row !important;
+        top: -13rem !important;
+        left: 0rem !important;
+        margin: auto !important;
+        width: 22rem !important;
+        height: 10rem !important;
+    }
+
+    .user-avatar {
+        width: 10rem !important;
+    }
+
+    .user-bio {
+        font-size: 0.4rem !important;
+        padding: 0 !important;
+    }
+
+    .user-type {
+        height: 1rem !important;
+    }
+
+    .cardbody {
+        padding: 1rem !important;
+        width: 13rem !important;
+    }
+
+    .user-name {
+        font-size: 1.4rem !important;
+    }
+
+    .user-id {
+        font-size: 0.8rem !important;
+    }
+
+    .user-name-id {
+        flex-direction: column;
+    }
+
+    .bio {
+        font-size: 0.8rem !important;
+        padding: 0 !important;
+    }
+
+    .user-type {
+        width: 90% !important;
+        height: 1.5rem !important;
+    }
+
+    .user-type-text {
+        font-size: 1rem !important;
+    }
+
+    .logo-text {
+        font-size: 1.6rem !important;
+    }
+
+    .button {
+        border-radius: 3rem;
+        width: 4rem;
+        height: 2rem !important;
+        font-size: 0.6rem;
+    }
+
+    .navbar {
+        padding: 0 0.5rem !important;
+    }
+
+    .nav-icons {
+        font-size: 1.3rem;
+        margin-left: 0.4rem;
+        margin-right: 0.4rem;
+    }
+
+    .marquee-box {
+        height: 4rem !important;
+    }
+
+    .grid-data {
+        font-size: 1.2rem !important;
+    }
+
+    .vertical-bar {
+        height: 3rem !important;
+    }
+
+    .releases {
+        margin-top: -10rem !important;
+    }
+    .footer{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .footer-left{
+        width: 100% !important;
+    }
+    .footer-spacer{
+        display: none !important;
+    }
+    .footer-right{
+        width: 100% !important;
+        display: flex !important;
+    }
+    .footer-right-link-box{
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        font-size: 0.8rem !important;
+
+    }
+}
